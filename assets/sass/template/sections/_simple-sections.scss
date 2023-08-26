@@ -1,0 +1,60 @@
+.z-index-common {
+    position: relative;
+    z-index: 3;
+}
+.border-bottom {
+    border-bottom: 1px solid #ccc;
+}
+.icon-group {
+    button,
+    a {
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+}
+.form-control {
+    border-radius: 0;
+}
+.form-select {
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    text-transform: uppercase;
+    box-shadow: none !important;
+    padding: 8px 35px 8px 20px;
+}
+.background-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.w-100 {
+    width: 100%;
+}
+.rounded-36 {
+    border-radius: 36px;
+    img {
+        border-radius: inherit;
+    }
+    @include sm {
+        border-radius: 20px;
+    }
+    @include xs {
+        border-radius: 10px;
+    }
+}
+.rounded-10 {
+    border-radius: 10px;
+    img {
+        border-radius: inherit;
+    }
+}
+
+@include md {
+    .form-select {
+        font-size: 16px;
+        padding: 8px 30px 8px 15px;
+    }
+}

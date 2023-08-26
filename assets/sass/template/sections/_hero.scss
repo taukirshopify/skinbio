@@ -1,0 +1,36 @@
+.ot-hero-wrapper {
+    position: relative;
+    z-index: 3;
+    background-size: auto 100%;
+    background-position: center right;
+    background-repeat: no-repeat;
+    &:before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(259.93deg, $white-color 36%, rgba(255, 255, 255, 0) 64%);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+}
+.ot-hero-slide {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+}
+.hero-content {
+    padding: 105px 0;
+    position: relative;
+    z-index: 5;
+}
+@include lg {
+    .ot-hero-wrapper {
+        background-position: right 30% center;
+    }
+}
+@include sm {
+    .hero-content {
+        padding: 70px 0;
+    }
+}
+
+

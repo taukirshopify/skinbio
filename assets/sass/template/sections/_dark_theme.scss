@@ -1,0 +1,57 @@
+.dark-theme {
+    --theme-color         : #B5037D;
+    --title-color         : #fff;
+    --body-color          : #fff;
+    --smoke-color         : #1F2C33;
+    --smoke-color2        : #1F2C33;
+    --border-color        : #343d42;
+    background-color: #101D24;
+    body {
+        background-color: #101D24;
+    }
+    [class*="logo"] {
+        img {
+            filter: saturate(2.5);
+        }
+    }
+    img[class*="logo"] {
+        filter: saturate(2.5);
+    }
+    .ot-btn:hover, 
+    .ot-btn.active {
+        color: #101D24;;
+    }
+    .faq-tab {
+        --smoke-color2: #283840;
+        .ot-btn.active {
+            color: $theme-color;
+        }
+    }
+    
+    .testi-card,
+    .ot-menu-wrapper .ot-menu-area,
+    .ot-hero-wrapper,
+    .testi-box .text,
+    .cta-box1,
+    .eye-area {
+        --white-color: #101D24;
+    }
+    .dropdown-link {
+        --white-color: #1F2C33;
+    }
+    .accordion-card .accordion-button:after,
+    .ot-mobile-menu ul .ot-item-has-children > a .ot-mean-expand,
+    .ot-menu-toggle,
+    .splide__arrow,
+    .dropdown-toggle::after,
+    .dropdown-link svg,
+    .main-menu ul li.menu-item-has-children > a:after {
+        filter: brightness(0) invert(1);
+    }
+    .main-menu ul.sub-menu {
+        background-color: $smoke-color;
+    }
+    .img-box2 .text {
+        background-color: #1F2C33;
+    }
+}

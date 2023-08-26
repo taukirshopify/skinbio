@@ -1,0 +1,116 @@
+// Primary Button
+.ot-btn {
+    border: none;
+    vertical-align: middle;
+    font-size: 24px;
+    font-weight: 400;
+    background-color: $theme-color;
+    color: $white-color;
+    padding: 17px 22px;
+    line-height: 1;
+    display: inline-block;
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    z-index: 2;
+    transition: 0.7s ease;
+    min-width: 190px;
+    &:hover,
+    &.active {
+        color: $white-color;
+        background-color: $title-color;
+    }
+    &.btn-fw {
+        width: 100%;
+    }
+    &.style2 {
+        background-color: transparent;
+        color: $theme-color;
+        border: 2px solid;
+        padding: 15px 22px;
+        &:hover {
+            background-color: $theme-color;
+            color: $white-color;
+            border-color: $theme-color;
+        }
+    }
+    &.style3 {
+        background-color: transparent;
+        color: $body-color;
+        border: 1px solid;
+        &:hover {
+            background-color: $title-color;
+            color: $white-color;
+            border-color: $title-color;
+        }
+    }
+    &.style4 {
+        background-color: transparent;
+        color: $white-color;
+        border: 2px solid;
+        padding: 15px 22px;
+        &:hover {
+            background-color: $title-color;
+            color: $white-color;
+            border-color: $title-color;
+        }
+    }
+    @include sm {
+        font-size: 16px;
+        min-width: 155px;
+    }
+} 
+@include xs {
+    .ot-btn {
+        &.btn-full {
+            width: 100%;
+        }
+    }
+}
+.btn-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+// Icon Btn
+.icon-btn {
+    display: inline-block;
+    width: var(--btn-size, 55px);
+    height: var(--btn-size, 55px);
+    line-height: var(--btn-size, 55px);
+    background-color: $title-color;
+    color: $white-color;
+    text-align: center;
+    border-radius: 0;
+    transition: 0.3s;
+    font-size: 24px;
+    border: none;
+    &:hover {
+        background-color: $theme-color;
+        color: $white-color;
+    }
+}
+
+.sort-btn {
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    text-transform: uppercase;
+    i {
+        margin-left: 5px;
+    }
+    &:hover {
+        color: $theme-color;
+    }
+    @include xs {
+        font-size: 0;
+        i {
+            font-size: 20px;
+        }
+    }
+}

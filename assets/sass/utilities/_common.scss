@@ -1,0 +1,22 @@
+.ot-social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    a {
+        display: inline-block;
+        height: 34px;
+        width: 34px;
+        line-height: 30px;
+        text-align: center;
+        background-color: $smoke-color;
+        border-radius: 50%;
+        color: $body-color;
+        font-size: 18px;
+        &:hover {
+            background-color: $theme-color;
+            path {
+                fill: $white-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.sec-title {
+  margin-bottom: calc(var(--section-title-space) - 14px);
+  margin-top: -0.24em;
+}
+
+.title-area,
+.sec-btn {
+  margin-bottom: var(--section-title-space);
+  .sec-title {
+    margin-bottom: 10px;
+  }
+}
+
+.border-title {
+  font-size: 30px;
+  color: $theme-color;
+  border-left: 4px solid $theme-color;
+  background-color: $smoke-color2;
+  padding: 15px 15px 15px 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+  @include lg {
+    font-size: 26px;
+  }
+  @include sm {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+}
+
+@include lg {
+  .title-area,
+  .sec-title,
+  .sec-btn {
+    --section-title-space: 50px;
+  }
+}
+
+@include md {
+  .title-area,
+  .sec-title,
+  .sec-btn {
+    --section-title-space: 45px;
+  }
+}

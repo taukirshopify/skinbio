@@ -1,0 +1,123 @@
+.fancy-animation {
+    animation: morph 8s ease-in-out infinite;
+}
+
+@keyframes morph {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+.jump {
+    animation: jumpAni 5s linear infinite;
+}
+@keyframes jumpAni {
+    0% {
+        transform: translateY(30px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(30px);
+    }
+}
+.moving {
+    animation: movingAni 5s linear infinite;
+}
+@keyframes movingAni {
+    0% {
+        transform: translateX(30px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(30px);
+    }
+}
+
+// Animate.css
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.animated.hinge {
+    animation-duration: 2s;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeInRight {
+    animation-name: fadeInRight;
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.fadeInLeft {
+    animation-name: fadeInLeft;
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+@keyframes fillLeft {
+    0% {
+        transform: scaleX(0);
+        transform-origin: left center;
+    }
+    to {
+        transform: scaleX(1);
+        transform-origin: left center;
+    }
+}
+.fillLeft {
+    animation-name: fillLeft;
+}
+
+@keyframes fillRight {
+    0% {
+        transform: scaleX(0);
+        transform-origin: right center;
+    }
+    to {
+        transform: scaleX(1);
+        transform-origin: right center;
+    }
+}
+.fillRight {
+    animation-name: fillRight;
+}
